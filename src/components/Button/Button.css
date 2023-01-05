@@ -1,0 +1,19 @@
+.Button {
+    border: 1px solid aqua;
+    border-radius: 6px;
+    background-color: transparent;
+    width: 140px;
+    height: 47px;
+}
+
+.Button_increase {
+    background-color: aquamarine;
+}
+
+.Button_decrease {
+    background-color: indianred;
+}
+
+.Button_reset {
+    background-color: darkgrey;
+}
