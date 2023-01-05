@@ -1,0 +1,40 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "awesome react counter",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeyAbretov/counter.git"
+  },
+  "keywords": [
+    "react",
+    "counter"
+  ],
+  "author": "Alexey Abretov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeyAbretov/counter/issues"
+  },
+  "homepage": "https://github.com/AlexeyAbretov/counter#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "@babel/core": "7.20.5",
+    "@babel/preset-env": "7.20.2",
+    "@babel/preset-react": "7.18.6",
+    "babel-loader": "9.1.0",
+    "html-webpack-plugin": "5.5.0",
+    "style-loader": "2.0.0",
+    "css-loader": "5.2.6"
+  }
+}
