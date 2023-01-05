@@ -8,8 +8,8 @@ const typeCss = {
     'reset': styles.Button_reset
 }
 
-export const Button = ({ title, type }) => {
+export const Button = ({ title, type, ...props }) => {
     return (
-        <button className={`${styles.Button} ${typeCss[type] || styles.Button_increase}`}>{title}</button>
+        <button className={`${styles.Button} ${typeCss[type] || styles.Button_increase}`} {...props}>{title}</button>
     )
 }

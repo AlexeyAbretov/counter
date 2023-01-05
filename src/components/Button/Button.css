@@ -4,6 +4,7 @@
     background-color: transparent;
     width: 140px;
     height: 47px;
+    cursor: pointer;
 }
 
 .Button_increase {
