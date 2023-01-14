@@ -4,11 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     devtool: 'cheap-module-source-map',
-    entry: path.resolve(__dirname, './index.js'),
+    entry: path.resolve(__dirname, './index.tsx'),
     module: {
         rules: [{
-            test: /\.(js|jsx)$/,
-            use: ['babel-loader'],
+            test: /\.(js|ts|jsx|tsx)$/,
+            use: { loader: 'ts-loader' }, 
             exclude: /node_modules/
         },
         {
@@ -32,7 +32,7 @@ module.exports = {
         clean: true
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         modules: [
             'node_modules',
             './src'
@@ -41,6 +41,9 @@ module.exports = {
             '@components': [path.resolve(__dirname, './src/components')],
             '@contexts': [path.resolve(__dirname, './src/contexts')],
             '@containers': [path.resolve(__dirname, './src/containers')],
+            '@constants': [path.resolve(__dirname, './src/constants')],
+            '@types': [path.resolve(__dirname, './src/types/types')],
+            '@store': [path.resolve(__dirname, './src/store')],
         }
     },
     devServer: {
