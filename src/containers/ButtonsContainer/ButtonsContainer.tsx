@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button } from "@components"
 import { CounterContext } from "@contexts";
 import { ActionKind } from "@types";
+import { DecreaseAction, IncreaseAction, ResetAction } from "@store";
 
 export const ButtonsContainer: React.FC = (): JSX.Element => {
     const { dispatch } = useContext(CounterContext);
@@ -11,17 +12,17 @@ export const ButtonsContainer: React.FC = (): JSX.Element => {
             <Button 
                 title="Уменьшить"
                 type='decrease'
-                onClick={() => dispatch({ type: ActionKind.Decrease })}
+                onClick={() => dispatch(DecreaseAction())}
             />
             <Button
                 title="Сбросить"
                 type='reset'
-                onClick={() => dispatch({ type: ActionKind.Reset })}
+                onClick={() => dispatch(ResetAction())}
             />
             <Button
                 title="Увеличить"
                 type='increase'
-                onClick={() => dispatch({ type: ActionKind.Increase })}
+                onClick={() => dispatch(IncreaseAction())}
             />
         </>
     )
