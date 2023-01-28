@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Button } from "@components"
-import { CounterContext } from "@contexts";
-import { ActionKind } from "@types";
 import { DecreaseAction, IncreaseAction, ResetAction } from "@store";
+import { useDispatch } from "react-redux";
 
 export const ButtonsContainer: React.FC = (): JSX.Element => {
-    const { dispatch } = useContext(CounterContext);
+    const dispatch = useDispatch();
 
     return (
         <>
