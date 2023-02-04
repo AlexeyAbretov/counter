@@ -62,6 +62,7 @@ module.exports = function () {
                 '@constants': [path.resolve(__dirname, './src/constants')],
                 '@types': [path.resolve(__dirname, './src/types/types')],
                 '@store': [path.resolve(__dirname, './src/store')],
+                '@theme': [path.resolve(__dirname, './src/theme')],
             }
         },
         devServer: {

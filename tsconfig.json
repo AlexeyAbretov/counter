@@ -13,6 +13,7 @@
             "@constants": ["constants"],
             "@types": ["types/types"],
             "@store": ["store"],
+            "@theme": ["theme"],
         },
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
