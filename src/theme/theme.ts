@@ -1,3 +1,10 @@
+const breakpoints = ['450px', '451px'];
+
+// @ts-ignore
+breakpoints.sm = breakpoints[0]
+// @ts-ignore
+breakpoints.lg = breakpoints[1]
+
 export const theme = {
     colors: {
         grey10: 'darkgrey',
@@ -6,7 +13,8 @@ export const theme = {
         red20: 'red',
         black: 'black',
         green10: 'green'
-    }
+    },
+    breakpoints
 }
 
 export type ThemeType = typeof theme;
