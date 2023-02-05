@@ -11,6 +11,9 @@ export const CounterContainer: React.FC = (): JSX.Element => {
         <Counter
             title={String(value)}
             type={type as CounterType}
+            {...value > 10 ? {
+                color: 'orange'
+            } : {}}
         />
     )
 }

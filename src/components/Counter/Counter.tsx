@@ -1,11 +1,29 @@
+import { Box, BoxProps } from '../Box';
 import React from 'react';
-import { CounterStyled, CounterType } from './styled';
+
+export type CounterType = 'zero' | 'lesszero' | 'abovezero';
+
+const colorByType: {
+    [key in CounterType]: string;
+} = {
+    zero: 'black',
+    lesszero: 'red10',
+    abovezero: 'green10'
+}
 
 export const Counter: React.FC<{
     title: string;
     type: CounterType;
-}> = ({ title, type }): JSX.Element => {
+} & BoxProps> = ({ title, type, ...props }): JSX.Element => {
     return (
-        <CounterStyled type={type}>{title}</CounterStyled>
+        <Box
+            fontSize={24}
+            // @ts-ignore
+            color={colorByType[type || 'zero']}
+            fontWeight="bolder"
+            {...props}
+        >
+            {title}
+        </Box>
     )
 }
