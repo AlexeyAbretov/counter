@@ -1,25 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { Counter, CounterType } from '@components';
-import { CounterContext } from '@contexts';
+import { useSelector } from 'react-redux';
+import { getCounterContanerPropsSelector } from '@store';
 
 export const CounterContainer: React.FC = (): JSX.Element => {
-    const {
-        state
-    } = useContext(CounterContext)
-
-    let type: CounterType = 'lesszero';
-
-    if ( state.counterValue === 0 ) {
-        type = 'zero';
-    } else if ( state.counterValue > 0 ) {
-        type = 'abovezero';
-    }
-
+    const { value, type } = useSelector(getCounterContanerPropsSelector);
+    
     return (
         <Counter
-            title={String(state.counterValue)}
-            type={type}
+            title={String(value)}
+            type={type as CounterType}
         />
     )
 }

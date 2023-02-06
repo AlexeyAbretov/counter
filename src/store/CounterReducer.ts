@@ -1,7 +1,7 @@
 import { Action, ActionKind, CounterStateType } from "@types";
 
 export const CounterReducer = (
-    state: CounterStateType,
+    state: CounterStateType = InitialState,
     action: Action
 ): CounterStateType => {
     const { type } = action;
@@ -10,13 +10,13 @@ export const CounterReducer = (
         case ActionKind.Increase: {
             return {
                 ...state,
-                value: state.value + 1
+                value: state.value + Number(COUNTER_STEP)
             };
         }
         case ActionKind.Decrease: {
             return {
                 ...state,
-                value: state.value - 1
+                value: state.value - Number(COUNTER_STEP)
             };
         }
         case ActionKind.Reset: {
@@ -32,6 +32,6 @@ export const CounterReducer = (
     }
 }
 
-export const InitialCounter: CounterStateType = {
+export const InitialState: CounterStateType = {
     value: 0
 }

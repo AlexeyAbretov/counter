@@ -1,14 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useDispatch } from "react-redux";
+
 import { Button } from "@components"
-import { CounterContext } from "@contexts";
-import { ActionKind } from "@types";
 import { DecreaseAction, IncreaseAction, ResetAction } from "@store";
 
+import { ButtonsWrapper } from "./styled";
+
 export const ButtonsContainer: React.FC = (): JSX.Element => {
-    const { dispatch } = useContext(CounterContext);
+    const dispatch = useDispatch();
 
     return (
-        <>
+        <ButtonsWrapper>
             <Button 
                 title="Уменьшить"
                 type='decrease'
@@ -24,6 +26,6 @@ export const ButtonsContainer: React.FC = (): JSX.Element => {
                 type='increase'
                 onClick={() => dispatch(IncreaseAction())}
             />
-        </>
+        </ButtonsWrapper>
     )
 }
