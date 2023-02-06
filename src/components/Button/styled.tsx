@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ThemeType } from "theme";
 
 export type ButtonType = 'increase' | 'decrease' | 'reset';
 
@@ -12,13 +13,13 @@ export const ButtonStyled = styled.button<{
     height: 47px;
     cursor: pointer;
     ${props => props.renderType === "increase" && `
-        background-color: aquamarine;
+        background-color: ${(props.theme as ThemeType).colors.aqua10};
     `}
     ${props => props.renderType === "decrease" && `
-        background-color: indianred;
+        background-color: ${(props.theme as ThemeType).colors.red10};
     `}
     ${props => props.renderType === "reset" && `
-        background-color: darkgrey;
+        background-color: ${(props.theme as ThemeType).colors.grey10};
     `}
 
     &:hover {
