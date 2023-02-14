@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ButtonsWrapper = styled.div`
-    display: flex;
+  display: flex;
 
-    @media (max-width: 450px) {
-        flex-direction: column;
-    }
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
