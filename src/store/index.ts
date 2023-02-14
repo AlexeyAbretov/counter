@@ -1,7 +1,9 @@
 export {
-  CounterReducer,
+  CounterSliceReducer,
   InitialState as InitialCounter,
-} from './CounterReducer';
+  decrement,
+  increment,
+  reset,
+} from './CounterSlice';
 export { store } from './store';
-export { DecreaseAction, IncreaseAction, ResetAction } from './Actions';
 export { getCounterContanerPropsSelector } from './selectors';
