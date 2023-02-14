@@ -18,7 +18,8 @@
     ],
     "globals": {
         "JSX": true,
-        "NODE_ENV": true
+        "NODE_ENV": true,
+        "COUNTER_STEP": true
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -42,6 +43,10 @@
                     ".ts",
                     ".tsx"
                 ]
+            },
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "./tsconfig.json"
             }
         }
     },

@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Action, CounterStateType, DispatchType } from '@types';
 import { compose, createStore, Store } from 'redux';
-import { CounterReducer } from './CounterReducer';
+import { CounterReducer, InitialState } from './CounterReducer';
 
 const composeEnhancers =
   NODE_ENV === 'development' &&
@@ -15,4 +16,4 @@ const composeEnhancers =
 
 export const store: Store<CounterStateType, Action> & {
   dispatch: DispatchType;
-} = createStore(CounterReducer, composeEnhancers());
+} = createStore(CounterReducer, InitialState, composeEnhancers());
