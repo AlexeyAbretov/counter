@@ -11,7 +11,8 @@
     "storybook": "start-storybook -p 6007",
     "eslint": "eslint 'src/**'",
     "eslint:fix": "eslint --fix 'src/**'",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage"
   },
   "repository": {
     "type": "git",
