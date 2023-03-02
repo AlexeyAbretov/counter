@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import { Button } from '@components';
-import { DecreaseAction, IncreaseAction, ResetAction } from '@store';
+import { decrement, increment, reset } from '@store';
 
 import { ButtonsWrapper } from './styled';
 
@@ -14,17 +14,13 @@ export const ButtonsContainer: React.FC = (): JSX.Element => {
       <Button
         title="Уменьшить"
         type="decrease"
-        onClick={() => dispatch(DecreaseAction())}
+        onClick={() => dispatch(decrement())}
       />
-      <Button
-        title="Сбросить"
-        type="reset"
-        onClick={() => dispatch(ResetAction())}
-      />
+      <Button title="Сбросить" type="reset" onClick={() => dispatch(reset())} />
       <Button
         title="Увеличить"
         type="increase"
-        onClick={() => dispatch(IncreaseAction())}
+        onClick={() => dispatch(increment())}
       />
     </ButtonsWrapper>
   );
