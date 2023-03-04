@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonsContainer should call decrement action 1`] = `
+[
+  {
+    "payload": undefined,
+    "type": "counter/decrement",
+  },
+]
+`;
+
+exports[`ButtonsContainer should render 1`] = `
+.c1 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: indianred;
+}
+
+.c1:hover {
+  opacity: 0.5;
+}
+
+.c2 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.c2:hover {
+  opacity: 0.5;
+}
+
+.c3 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.c3:hover {
+  opacity: 0.5;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width:450px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <button
+      class="c1"
+    >
+      Уменьшить
+    </button>
+    <button
+      class="c2"
+    >
+      Сбросить
+    </button>
+    <button
+      class="c3"
+    >
+      Увеличить
+    </button>
+  </div>
+</div>
+`;
