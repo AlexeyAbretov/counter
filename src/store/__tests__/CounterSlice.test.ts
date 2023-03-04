@@ -11,7 +11,7 @@ describe('CounterSlice tests', () => {
   describe('increment tests', () => {
     it('should add 1', () => {
       expect(CounterSliceReducer(InitialState, increment())).toEqual({
-        value: 0,
+        value: 1,
       });
     });
   });
