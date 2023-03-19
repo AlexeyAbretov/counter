@@ -5,5 +5,9 @@ export const Counter: React.FC<{
   title: string;
   type: CounterType;
 }> = ({ title, type }): JSX.Element => {
-  return <CounterStyled type={type}>{title}</CounterStyled>;
+  return (
+    <CounterStyled data-testid="counter" type={type}>
+      {title}
+    </CounterStyled>
+  );
 };

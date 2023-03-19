@@ -1,14 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonsContainer should call decrement action 1`] = `
-[
-  {
-    "payload": undefined,
-    "type": "counter/decrement",
-  },
-]
-`;
-
 exports[`ButtonsContainer should render 1`] = `
 .c1 {
   border: 1px solid aqua;
