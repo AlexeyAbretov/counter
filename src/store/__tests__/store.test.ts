@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { CounterStore } from '..';
 
 describe('store tests', () => {
