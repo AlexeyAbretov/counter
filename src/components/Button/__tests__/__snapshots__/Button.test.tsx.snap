@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button tests should render correct decrease button 1`] = `
+.c0 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: indianred;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    I am button
+  </button>
+</div>
+`;
+
+exports[`Button tests should render correct increase button 1`] = `
+.c0 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    I am button
+  </button>
+</div>
+`;
+
+exports[`Button tests should render correct reset button 1`] = `
+.c0 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    I am button
+  </button>
+</div>
+`;

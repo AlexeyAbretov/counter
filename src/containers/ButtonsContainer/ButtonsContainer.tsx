@@ -1,27 +1,29 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/destructuring-assignment */
+import React, { useContext } from 'react';
+import { observer } from 'mobx-react-lite';
 
 import { Button } from '@components';
-import { decrement, increment, reset } from '@store';
 
+import { CounterContext } from '@store';
 import { ButtonsWrapper } from './styled';
 
-export const ButtonsContainer: React.FC = (): JSX.Element => {
-  const dispatch = useDispatch();
+export const ButtonsContainer: React.FC = observer((): JSX.Element => {
+  const counter = useContext(CounterContext);
 
   return (
     <ButtonsWrapper>
       <Button
         title="Уменьшить"
         type="decrease"
-        onClick={() => dispatch(decrement())}
+        onClick={() => counter.decrement()}
       />
-      <Button title="Сбросить" type="reset" onClick={() => dispatch(reset())} />
+      <Button title="Сбросить" type="reset" onClick={() => counter.reset()} />
       <Button
         title="Увеличить"
         type="increase"
-        onClick={() => dispatch(increment())}
+        onClick={() => counter.increment()}
       />
     </ButtonsWrapper>
   );
-};
+});

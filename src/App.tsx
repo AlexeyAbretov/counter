@@ -1,9 +1,9 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React from 'react';
-import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 
 import { CounterContainer, ButtonsContainer } from '@containers';
-import { store } from '@store';
+import { CounterContext, CounterStore } from '@store';
 import { theme } from '@theme';
 
 import { GlobalStyles } from './styles/GlobalStyles';
@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Provider store={store}>
+      <CounterContext.Provider value={new CounterStore()}>
         <ThemeProvider theme={theme}>
           <AppStyled>
             <CounterContainer />
@@ -22,7 +22,7 @@ export const App = () => {
             </AppButtons>
           </AppStyled>
         </ThemeProvider>
-      </Provider>
+      </CounterContext.Provider>
     </>
   );
 };

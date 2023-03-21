@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterContainer should render abovezero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bolder;
+  color: green;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="counter"
+    type="abovezero"
+  >
+    1
+  </div>
+</div>
+`;
+
+exports[`CounterContainer should render lesszero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bolder;
+  color: indianred;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="counter"
+    type="lesszero"
+  >
+    -1
+  </div>
+</div>
+`;
+
+exports[`CounterContainer should render zero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bolder;
+  color: black;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="counter"
+    type="zero"
+  >
+    0
+  </div>
+</div>
+`;
