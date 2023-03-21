@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Counter tests > should render abovezero type 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe hHWHmU"
+    data-testid="counter"
+    type="abovezero"
+  >
+    1
+  </div>
+</div>
+`;
+
+exports[`Counter tests > should render lesszero type 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe jXLxPF"
+    data-testid="counter"
+    type="lesszero"
+  >
+    -1
+  </div>
+</div>
+`;
+
+exports[`Counter tests > should render zero type 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe ftiUJn"
+    data-testid="counter"
+    type="zero"
+  >
+    0
+  </div>
+</div>
+`;
