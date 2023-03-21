@@ -2,10 +2,14 @@
 /* eslint-disable no-undef */
 import { ThemeProvider } from 'styled-components';
 import React from 'react';
+
+import { fireEvent, render } from '@testing-library/react';
+import { it, describe, expect, vi } from 'vitest';
+
 import { theme } from '@theme';
 import { CounterContext, CounterStore } from '@store';
-import { fireEvent, render } from '@testing-library/react';
-import { ButtonsContainer } from '../ButtonsContainer';
+
+import { ButtonsContainer } from '..';
 
 const getUi = (store: CounterStore): JSX.Element => {
   return (
@@ -26,7 +30,7 @@ describe('ButtonsContainer', () => {
 
   it('should call decrement action', () => {
     const store = new CounterStore();
-    store.decrement = jest.fn();
+    store.decrement = vi.fn();
 
     const { getByText } = render(getUi(store));
 
@@ -41,7 +45,7 @@ describe('ButtonsContainer', () => {
 
   it('should call increment action', () => {
     const store = new CounterStore();
-    store.increment = jest.fn();
+    store.increment = vi.fn();
 
     const { getByText } = render(getUi(store));
 
@@ -55,7 +59,7 @@ describe('ButtonsContainer', () => {
 
   it('should call reset action', () => {
     const store = new CounterStore();
-    store.reset = jest.fn();
+    store.reset = vi.fn();
 
     const { getByText } = render(getUi(store));
 

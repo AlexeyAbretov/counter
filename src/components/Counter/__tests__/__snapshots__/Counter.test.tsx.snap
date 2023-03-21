@@ -1,9 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CounterContainer > should render abovezero 1`] = `
+exports[`Counter tests > should render abovezero type 1`] = `
 <div>
   <div
-    class="sc-gswNZR gxVSuE"
+    class="sc-bcXHqe hHWHmU"
     data-testid="counter"
     type="abovezero"
   >
@@ -12,10 +12,10 @@ exports[`CounterContainer > should render abovezero 1`] = `
 </div>
 `;
 
-exports[`CounterContainer > should render lesszero 1`] = `
+exports[`Counter tests > should render lesszero type 1`] = `
 <div>
   <div
-    class="sc-gswNZR bZfoa-d"
+    class="sc-bcXHqe jXLxPF"
     data-testid="counter"
     type="lesszero"
   >
@@ -24,10 +24,10 @@ exports[`CounterContainer > should render lesszero 1`] = `
 </div>
 `;
 
-exports[`CounterContainer > should render zero 1`] = `
+exports[`Counter tests > should render zero type 1`] = `
 <div>
   <div
-    class="sc-gswNZR cneBUb"
+    class="sc-bcXHqe ftiUJn"
     data-testid="counter"
     type="zero"
   >

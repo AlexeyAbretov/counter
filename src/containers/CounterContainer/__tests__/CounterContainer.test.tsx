@@ -2,10 +2,13 @@
 /* eslint-disable no-undef */
 import { ThemeProvider } from 'styled-components';
 import React from 'react';
+import { it, describe, expect } from 'vitest';
+import { render } from '@testing-library/react';
+
 import { theme } from '@theme';
 import { CounterContext, CounterStore } from '@store';
-import { render } from '@testing-library/react';
-import { CounterContainer } from '../CounterContainer';
+
+import { CounterContainer } from '..';
 
 const getUi = (store: CounterStore): JSX.Element => {
   return (
