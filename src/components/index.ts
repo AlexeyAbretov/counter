@@ -1,2 +1,3 @@
 export { Button } from './Button';
-export { Counter, CounterType } from './Counter';
+export { Counter } from './Counter';
+export type { CounterType } from './Counter';

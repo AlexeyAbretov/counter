@@ -1,2 +1,2 @@
 export { Counter } from './Counter';
-export { CounterType } from './styled';
+export type { CounterType } from './styled';
