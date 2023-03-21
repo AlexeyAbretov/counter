@@ -1,16 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CounterContainer should render abovezero 1`] = `
-.c0 {
-  font-size: 24px;
-  color: black;
-  font-weight: bolder;
-  color: green;
-}
-
+exports[`CounterContainer > should render abovezero 1`] = `
 <div>
   <div
-    class="c0"
+    class="sc-gswNZR gxVSuE"
     data-testid="counter"
     type="abovezero"
   >
@@ -19,17 +12,10 @@ exports[`CounterContainer should render abovezero 1`] = `
 </div>
 `;
 
-exports[`CounterContainer should render lesszero 1`] = `
-.c0 {
-  font-size: 24px;
-  color: black;
-  font-weight: bolder;
-  color: indianred;
-}
-
+exports[`CounterContainer > should render lesszero 1`] = `
 <div>
   <div
-    class="c0"
+    class="sc-gswNZR bZfoa-d"
     data-testid="counter"
     type="lesszero"
   >
@@ -38,17 +24,10 @@ exports[`CounterContainer should render lesszero 1`] = `
 </div>
 `;
 
-exports[`CounterContainer should render zero 1`] = `
-.c0 {
-  font-size: 24px;
-  color: black;
-  font-weight: bolder;
-  color: black;
-}
-
+exports[`CounterContainer > should render zero 1`] = `
 <div>
   <div
-    class="c0"
+    class="sc-gswNZR cneBUb"
     data-testid="counter"
     type="zero"
   >

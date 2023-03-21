@@ -3,9 +3,10 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
+import { it, describe, expect, vi } from 'vitest';
 
-import { theme } from '../../../theme';
-import { Button, ButtonProps } from '../Button';
+import { theme } from '@theme';
+import { Button, ButtonProps } from '..';
 
 const getUi = (props?: ButtonProps): JSX.Element => {
   return (
@@ -13,7 +14,7 @@ const getUi = (props?: ButtonProps): JSX.Element => {
       <Button
         title="I am button"
         type="decrease"
-        onClick={jest.fn()}
+        onClick={vi.fn()}
         {...(props || {})}
       />
     </ThemeProvider>
@@ -48,7 +49,7 @@ describe('Button tests', () => {
   });
 
   it('should handle onClick', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
 
     const { getByText } = render(
       getUi({
@@ -66,7 +67,7 @@ describe('Button tests', () => {
   });
 
   it('should not handle onClick', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
 
     const { getByText } = render(
       getUi({

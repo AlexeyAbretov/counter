@@ -1,3 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { it, describe, expect } from 'vitest';
+
 /* eslint-disable no-undef */
 import { CounterStore } from '..';
 
