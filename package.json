@@ -10,7 +10,7 @@
     "storybook": "start-storybook -p 6006",
     "eslint": "eslint 'src/**'",
     "eslint:fix": "eslint --fix 'src/**'",
-    "test": "vitest",
+    "test": "vitest run",
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
     "postinstall": "husky install",
