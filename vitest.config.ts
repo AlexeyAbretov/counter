@@ -1,9 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import path from 'path';
 
 export default {
   test: {
     globals: true,
     environment: 'jsdom',
+  },
+  define: {
+    COUNTER_STEP: '1',
   },
   resolve: {
     alias: {

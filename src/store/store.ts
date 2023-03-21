@@ -12,11 +12,11 @@ export class CounterStore {
   }
 
   increment() {
-    this.value += 1;
+    this.value += Number(COUNTER_STEP);
   }
 
   decrement() {
-    this.value -= 1;
+    this.value -= Number(COUNTER_STEP);
   }
 
   reset() {
